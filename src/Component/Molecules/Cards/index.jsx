@@ -4,12 +4,13 @@ import {
   CardsContainer,
   CardsWrapper,
   ImageContainer,
+  MyButton,
   MyTitle,
   MyYear,
 } from "../../GlobalStyles";
 import noImage from "../../../Assets/Image/noImage.jpg";
 
-const Cards = ({ Image, Title, Year }) => {
+const Cards = ({ Image, Title, Year, onClick }) => {
   return (
     <CardsContainer>
       <CardsWrapper>
@@ -17,6 +18,7 @@ const Cards = ({ Image, Title, Year }) => {
         <CardBody>
           <MyTitle primary>{Title}</MyTitle>
           <MyYear>{Year}</MyYear>
+          <MyButton onClick={onClick}>Details</MyButton>
         </CardBody>
       </CardsWrapper>
     </CardsContainer>
