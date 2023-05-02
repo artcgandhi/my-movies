@@ -7,7 +7,6 @@ function App() {
   const [input, setInput] = useState("");
   const [listMovies, setListMovies] = useState([]);
   const [loading, setLoading] = useState(false);
-  console.log("--listmovies--", listMovies);
 
   // submit function
   const handleInputChange = (event) => {
