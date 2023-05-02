@@ -24,7 +24,7 @@ const Modal = (props) => {
       <MyModalContainer>
         <ModalContent>
           <ModalHeader>
-            <MyTitle>{props.Title}</MyTitle>
+            <MyTitle primary>{props.Title}</MyTitle>
             <ButtonX onClick={props.onCloseX}>X</ButtonX>
           </ModalHeader>
           <ModalBody>
@@ -35,18 +35,20 @@ const Modal = (props) => {
                 </ModalImageContainer>
                 <ModalCol>
                   <ListGroup>
-                    <ListGroupItem>{props.Title}</ListGroupItem>
                     <ListGroupItem>
-                      <strong>Director : {props.Director}</strong>
+                      <strong>{props.Title}</strong>
                     </ListGroupItem>
                     <ListGroupItem>
-                      <strong>Actors : {props.Actors}</strong>
+                      <strong>Director :</strong> {props.Director}
                     </ListGroupItem>
                     <ListGroupItem>
-                      <strong>Runtime : {props.Runtime}</strong>
+                      <strong>Actors :</strong> {props.Actors}
                     </ListGroupItem>
                     <ListGroupItem>
-                      <strong>Plot : {props.Plot}</strong>
+                      <strong>Runtime :</strong> {props.Runtime}
+                    </ListGroupItem>
+                    <ListGroupItem>
+                      <strong>Plot :</strong> {props.Plot}
                     </ListGroupItem>
                   </ListGroup>
                 </ModalCol>
