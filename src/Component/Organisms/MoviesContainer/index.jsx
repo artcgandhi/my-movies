@@ -39,7 +39,7 @@ const MoviesContaier = ({ movies, loading }) => {
   // show detail fucntion
   const detailClicked = (id) => {
     setLoadingModal(true);
-    fetch(`http://www.omdbapi.com/?apikey=5aabd46d&i=${id}`)
+    fetch(`https://www.omdbapi.com/?apikey=5aabd46d&i=${id}`)
       .then((res) => res.json())
       .then((res) => {
         setDetail(res);

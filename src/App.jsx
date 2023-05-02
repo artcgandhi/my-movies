@@ -16,7 +16,7 @@ function App() {
   const handleSubmitButton = (event) => {
     setLoading(true);
     event.preventDefault();
-    fetch(`http://www.omdbapi.com/?apikey=5aabd46d&s=${input}`)
+    fetch(`https://www.omdbapi.com/?apikey=5aabd46d&s=${input}`)
       .then((res) => res.json())
       .then((res) => {
         setListMovies(res.Search);
@@ -28,7 +28,7 @@ function App() {
   // initial render
   useEffect(() => {
     setLoading(true);
-    fetch("http://www.omdbapi.com/?apikey=5aabd46d&s=pirates of the caribbean")
+    fetch("https://www.omdbapi.com/?apikey=5aabd46d&s=pirates of the caribbean")
       .then((res) => res.json())
       .then((res) => {
         setListMovies(res.Search);
