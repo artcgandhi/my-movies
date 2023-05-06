@@ -13,10 +13,10 @@ const MyNavbar = styled.nav`
   padding: 0 5vw;
 `;
 
-const Navbar = ({ handleSubmit, handleChange, myValue }) => {
+const Navbar = ({ handleSubmit, handleChange, myValue, titleNavbar }) => {
   return (
     <MyNavbar>
-      <HomeButton href="/">My-Movies</HomeButton>
+      <HomeButton href="/">{titleNavbar}</HomeButton>
       <MySearch
         onSubmit={handleSubmit}
         onChange={handleChange}

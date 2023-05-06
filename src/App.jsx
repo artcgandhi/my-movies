@@ -41,6 +41,7 @@ function App() {
         handleSubmit={handleSubmitButton}
         handleChange={handleInputChange}
         myValue={input}
+        titleNavbar={"My-Movies"}
       />
       <MoviesContaier movies={listMovies} loading={loading} />
     </Container>
